@@ -1,0 +1,118 @@
+body {
+  margin: 20px;
+  font-size: 30px;
+}
+div {
+  flex-wrap: wrap;
+}
+header {
+  font-size: 1.5em;
+}
+
+#desktopHeader {
+  display: flex;
+}
+#mobileHeader {
+  display: none;
+}
+#smallerContent {
+  display: flex;
+}
+
+.box {
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  margin: 2px;
+  flex-grow: 1;
+
+  text-align: center;
+  line-height: 50px;
+}
+header .box {
+  background-color: yellow;
+  height: 50px;
+}
+#mainContent .box {
+  background-color: lightblue;
+  height: 150px;
+}
+#smallerContent .box {
+  background-color: pink;
+  height: 100px;
+  flex-basis: 20%;
+}
+
+
+/* question 1
+
+on <= 600px
+  change body
+  to have font-size: 16px;
+  resulting in a page-wide change of size
+
+*/
+/*@media (max-width:600px){
+  body{
+    font-size: 16px;
+  }
+}*/
+
+
+/* question 2
+
+on <= 600px
+  change #desktopHeader
+  to have display: none;
+  resulting in it disappearing
+
+  change #mobileHeader
+  to have display: flex;
+  resulting in it appearing
+
+*/
+/*@media (max-width:600px){
+  #desktopHeader{
+  display: none;
+  }
+  #mobileHeader{
+  display: flex;
+  }
+}*/
+
+
+
+/* question 3
+
+on <= 800px
+  change #smallerContent .box
+  to have flex-basis: 30%;
+  resulting in 3 columns of Sub
+
+on <= 600px
+  change #smallerContent .box
+  to have flex-basis: 45%;
+  resulting in 2 columns of Sub
+
+on <= 400px
+  change #smallerContent .box
+  to have flex-basis: 100%;
+  resulting in 1 column of Sub
+
+*/
+/*the order is critical*/
+@media (max-width:800px){
+  #smallerContent .box{
+    flex-basis: 30%;
+  }
+}
+@media (max-width:600px){
+  #smallerContent .box{
+    flex-basis: 45%;
+  }
+}
+@media (max-width:400px){
+  #smallerContent .box{
+    flex-basis: 100%;
+  }
+}

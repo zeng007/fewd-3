@@ -1,0 +1,51 @@
+body {
+  margin: 50px;
+}
+
+#switcher {
+  display: flex;
+}
+#switcher div {
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 3px solid black;
+
+  margin-left: 15px;
+}
+
+/*look for the child in weitcher*/
+#switcher div:first-child {
+  margin-left: 0px;
+}
+
+.whiteStyle {
+  background-color: white;
+  color: black;
+}
+.grayStyle {
+  background-color: gray;
+  color: white;
+}
+.blueStyle {
+  background-color: blue;
+  color: white;
+}
+.greenStyle {
+  background-color: green;
+  color: white;
+}
+.redStyle {
+  background-color: red;
+  color: white;
+}
+.yellowStyle {
+  background-color: yellow;
+  color: black;
+}
+.purpleStyle {
+  background-color: purple;
+  color: white;
+}

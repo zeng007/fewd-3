@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+
+#imageContainer {
+  max-width: 800px;
+  margin: 0px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+#imageContainer div {
+  width: 50%;
+  margin: 0px auto;
+
+  padding: 5px;
+  box-sizing: border-box;
+}
+#imageContainer div img {
+  width: 100%;
+  height: auto;
+}

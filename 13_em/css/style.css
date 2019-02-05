@@ -1,0 +1,56 @@
+html {
+  /* this is what rem references */
+  font-size: 30px;
+}
+
+body {
+  margin: 0px;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.compare {
+  display: flex;
+  justify-content: center;
+}
+.compare > div {
+  /* this only effects any immediate child divs */
+  /* without the ">", it would affect all divs within .compare */
+  padding: 10px;
+  width: 50%;
+}
+
+.px {
+  font-size: 30px;
+}
+.px .small {
+  font-size: 15px;
+}
+.px .big {
+  font-size: 45px;
+}
+
+.em {
+  font-size: 30px;
+}
+.em .small {
+  font-size: 0.5em;
+}
+.em .big {
+  font-size: 1.5em;
+}
+
+.rem {
+  font-size: 1rem;
+}
+.rem .small {
+  font-size: 0.5rem;
+}
+.rem .big {
+  font-size: 1.5rem;
+}
